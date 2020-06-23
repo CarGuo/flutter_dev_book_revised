@@ -14,4 +14,90 @@
 
 >  a given widget can be placed in the tree multiple times. Each time a widget is placed in the tree, it is inflated into an [Element]
 
-所以造成该笔误的原因是前后角度出现变为，故此更正。
+
+如下代码所示，通过运行如下代码，可以看到 `textUseAll` 在多个地方被 inflated 并且正常渲染吹 `3333333` 。
+
+```
+
+final textUseAll = new Text(
+  "3333333",
+  style: new TextStyle(fontSize: 18, color: Colors.red),
+);
+
+class MyHomePage extends StatelessWidget {
+  void goNext(context) {
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+      return ShowPage();
+    }));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Center(
+          child: Container(
+        color: Colors.blue,
+        height: 80,
+        child: Stack(
+          children: <Widget>[
+            new Center(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                textBaseline: TextBaseline.alphabetic,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  textUseAll,
+                  Text(
+                    ' GSY ',
+                    style: TextStyle(fontSize: 36, fontFamily: "Heiti"),
+                  ),
+                  textUseAll,
+                ],
+              ),
+            ),
+          ],
+        ),
+      )),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          goNext(context);
+        },
+        tooltip: 'Next',
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+class ShowPage extends StatelessWidget {
+  void goNext(context) {
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+      return ShowPage();
+    }));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: Container(
+        child: new Center(
+          child:
+          textUseAll,
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          goNext(context);
+        },
+        tooltip: 'goNext',
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+```
+
+**所以造成该笔误的原因是前后角度出现变为，故此更正。**
