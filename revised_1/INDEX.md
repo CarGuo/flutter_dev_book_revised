@@ -100,4 +100,4 @@ class ShowPage extends StatelessWidget {
 
 ```
 
-**所以造成该笔误的原因是前后角度出现变为，故此更正。**
+**所以造成该笔误的原因是前后角度出现变化，故此更正。**
