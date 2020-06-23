@@ -15,7 +15,7 @@
 >  a given widget can be placed in the tree multiple times. Each time a widget is placed in the tree, it is inflated into an [Element]
 
 
-如下代码所示，通过运行如下代码，可以看到 `textUseAll` 在多个地方被 inflated 并且正常渲染吹 `3333333` 。
+举一个不是十分严格但是很具代表性的例子，如下代码所示，通过运行如下代码后，可以看到 `textUseAll` 在多个地方被 inflated 并且正常渲染出`3333333` 的效果。
 
 ```
 
