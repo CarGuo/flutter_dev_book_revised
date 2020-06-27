@@ -10,7 +10,7 @@
 ## 修订内容
 
 - 1、[第三章中 Widget 和 Element 对应关系内容修正](./revised_1/INDEX.md)
-* 
+- 2、[第二章和第五章部分内容修正](./revised_2/INDEX.md)
 * 
 * 
 * 
@@ -19,5 +19,4 @@
 
 ## 联系方式
 
-![](./WECHAT.png)
-![](./QQ.png)
+![公众号](http://img.cdn.guoshuyu.cn/wechat_qq.png)
