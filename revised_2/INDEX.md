@@ -45,7 +45,7 @@ flutter: base c()
 error: The class 'A2' can't be used as a mixin because it extends a class other than Object. 
 ```
 
-那么需要在你**项目根目录增加 analysis_options.yaml 文件，并添加如下所示内容后执行下 `flutter pub get`。**
+那么需要在你**项目根目录增加 analysis_options.yaml 文件，并添加如下所示内容后执行`flutter pub get`。**
 
 
 ```
