@@ -3,8 +3,9 @@
 #### 这个项目是用于修订补充《Flutter开发实战详解》中的一些笔误或者勘误，原纸质书可见：https://item.jd.com/12883054.html
 
 
-[![](./INDEX.jpeg)](https://item.jd.com/12883054.html
-)
+[![](./INDEX.jpeg)](https://item.jd.com/12883054.html)
+
+### 如果图片资源看不到可以看 [码云](https://gitee.com/CarGuo/flutter_dev_book_revised)
 
 
 ## 修订内容
