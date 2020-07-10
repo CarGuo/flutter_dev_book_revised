@@ -13,6 +13,7 @@
 - 1、[第三章中 Widget 和 Element 对应关系内容修正](./revised_1/INDEX.md)
 - 2、[第二章和第五章部分内容修正](./revised_2/INDEX.md)
 - 3、[第五章部分内容更正](./revised_3/INDEX.md)
+- 3、[第二章内容代码修正](./revised_4/INDEX.md)
 * 
 * 
 * 
